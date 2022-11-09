@@ -94,7 +94,7 @@ Press "Esc key" to lock the file.
 
 ##############################################
 Assignment-01#
-Create file with same baseurl mentioned( /etc/yum.repo
+Create file as mentioned below.
 vim file_name.txt 
 Press "i key" for insert mode. 
 
