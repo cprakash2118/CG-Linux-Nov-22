@@ -95,7 +95,8 @@ Press "Esc key" to lock the file.
 ##############################################
 Assignment-01#
 Create file as mentioned below.
-vim file_name.txt 
+
+$vim file_name.txt 
 Press "i key" for insert mode. 
 
 This is my 1st  via vim 
@@ -103,6 +104,46 @@ This is my 2nd
 This is my 3rd line.
 
 Press "Esc key" to lock the file.
+
+:wq 
+
+$ cat file_name 
+
+Note:  It will show the content of the file.
+
+
+Assignment-02#
+$ mkdir dir1 
+$ mkdir dir2
+$ touch file.txt 
+$ file * 
+$ mkdir dir1
+$ mkdir dir2 
+$ touch file.txt 
+$ tree dir1 (Nothing)
+
+$ cp <source> <Destination>
+$ cp file.txt dir1 
+
+Note: Source is "file.txt" and destination is "dir1".
+
+$ tree dir1 (You will get structure).
+
+
+
+- Created file (via touch, vim).
+- Created directory & File (dir1 dir2).
+- Verify the copy operration.
+
+
+
+
+
+
+
+Coping the file via absolute.
+
+$  
 
 
 
