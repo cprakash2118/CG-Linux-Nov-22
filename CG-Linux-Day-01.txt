@@ -132,8 +132,51 @@ $ tree dir1 (You will get structure).
 
 
 - Created file (via touch, vim).
-- Created directory & File (dir1 dir2).
-- Verify the copy operration.
+- Created directory & File (dir1 dir2 - using "mkdir").
+- Verify the copy operation (cp)
+
+### 
+
+cp dir1 dir2  (It will not copy the content).
+ls -l dir2    (Empty dir)
+
+cp -r dir1 dir2  (This will work)
+
+Note: Because we have modified the nature of cp command using option (-r) it means recurstively copy the content.
+
+mkdir dir3 
+cp -r -v dir1 dir3  
+
+or 
+
+mkdir dir4 
+cp -rv dir1 dir4 
+or
+cp -vr dir1 dir4 
+
+
+
+####
+
+command  Option  Argument1 argument2 
+cp -r dir1 dir2
+cp -rv dir1 dir4 
+
+cp - COmmand - Utility to perform some action 
+-r - Option (Which modify the nature of command/utility).
+dir1 & dir2 - Arguments (dir1 is 1st argument and dir2 is 2nd argument).
+  Argument is a data which required to execute the command/utility.
+  
+  
+
+
+
+
+
+
+
+
+
 
 
 
