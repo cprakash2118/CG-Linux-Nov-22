@@ -12,5 +12,107 @@ https://github.com/cprakash2118/CG-Linux-Nov-22s
 4:00 6:00pm    - Session-04 
 
 #############
+- Define concepts 
+- Explain the purpose of concepts.
+- Working behind the concepts. 
+
+OPerating System - It's a software which manager the computer hadrware, and it's interface between software and hadrware.
+
+- Banking application --> Login to application which is running somewhere in some server.
+
+- OPerating System (User --> INterface "GUI or CLI" --> Kernel --> H/w )
+- Libs/bins (COmmands) 
+- Kernel upgrade --> Kernel patch (Kernel patching - adding new libs/bins to the kernel).
+
+
+  Linux is an operating system.
+  Enterprise Linux ?
+  Associated with SAO and SLA.
+  
+  Red Hat Linux
+  Fedora Linux 
+  Centos Linux 
+  SUSE Linux 
+  SUSE Enterprise Linux etc 
+  
+  
+  
+============================
+Assigment-#1 
+Login to Linux system using root and normal account. (root, normal, system)
+
+root - Admin user  (At the time of installation, this account already created, we need to setup the password only).
+normal - user1,user2,user3 (Created via root or sudo users, when you login using normal account - $ sign )
+system - apache (Can not be able to use this account).
+
+How  to know which account used to login to Linux server/system.
+# whoami 
+root 
+# pwd
+/root 
+
+
+$ whoami 
+chndra
+$ pwd 
+
+
+
+
+Step 1) Start VM/machine loing with your account (root or normal user account)
+Step 2) Execute basic commands 
+        $ cal 
+        $ date 
+        $ ls 
+        $ pwd
+        $ uptime 
+
+
+##### Login to Linux system/server via root or normal account.
+
+root account is super user account (Super user account mean - admin account).
+root/password (When you start your machine then use these account to login to system).
+When used root account login then "#" and when normal account login "$".
+
+
+### The file system Hierachy 
+    1st lavel "/"     - root file system 
+	2nd lavel "bin"   - bin or /usr/bin or are same.
+	          "home"  - Defualt user's home dir.
+		 "/" "home" "user_name" 
+		 
+		 "/" + "home"/ + "user_name" --> /home/user_name \
+Absolute path always start with "/" 
+
+Relative path will not be start by "/" 
+
+#############
+Step 1) Start VM/machine login to your account (root or normal user account)
+Step 2) Execute basic commands
+
+mkdir /ORG/   (This create one fiolder/directory.
+- cd /ORG/     ( cd /ORG)   
+- pwd (
+/ORG
+- touch file1 
+- touch file2
+
+Assigment-#2
+Create directory /ORG/ --> then move indide /ORG dir and --> then touch file1 file2 file3; 
+ 
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+  
+  
 
 
