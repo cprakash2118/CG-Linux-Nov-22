@@ -314,11 +314,36 @@ copy file3 to CSE/3rd_year   (Use absolute path)
 copy file4 to ECE/3rd_year    (Use relative path)
 
 ######
-Solution
+Solution: copy  file1 to ECE/3rd_year  (Use absolute path)
 $pwd
 BE3/CSE/1st_year
 $ cp -rv ../../BE3/CSE/1s_year/file1  ../../ECE/3rd_year/              (Relative path)
 $ cp /home/john/BE3/CSE/1s_year/file1  /home/john/BE3/ECE/3rd_year/    (Absolute path).
+
+##
+Solution: copy file2 to IT/3rd_year    (Use relative path
+$pwd
+BE3/CSE/1st_year
+$ cp -rv ../../BE3/IT/1s_year/file2   ../../IT/3rd_year/             (Relative path)
+$ cp /home/john/BE3/IT/1s_year/file2  /home/john/BE3/IT/3rd_year     (Absolute path)
+
+
+##
+Solution: copy file3 to CSE/3rd_year   (Use absolute path)
+$pwd
+BE3/CSE/1st_year
+$ cp -rv ../../BE3/ME/1s_year/file3   ../../CSE/3rd_year/             (Relative path)
+$ cp /home/john/BE3/ME/1s_year/file3   /home/john/BE3/CSE/3rd_year/      (Absolute path)
+
+##
+Solution: copy file4 to ECE/3rd_year    (Use relative path)
+$pwd
+BE3/CSE/1st_year
+$ cp -rv ../../BE3/ECE/1s_year/file4   ../../ECE/3rd_year/             (Relative path)
+$ cp /home/john/BE3/ECE/1s_year/file4   /home/john/BE3/ECE/3rd_year/      (Absolute path)
+
+
+######
 
 
 NOte: copy - "cp" command 
@@ -360,8 +385,34 @@ Absolute path always start "with /"
 Relative path:- 
 Relative path not start with "/" 
 
+==========================
+
+#############################################
+Step-01:-
+
+$ vim file_name.txt 
+
+press "i key" insert mode 
+This is my 1st line.
+This is my 2nd line.
+This is my 3rd line.
+
+Press "esc key" - Lock mode.
+
+Then press ":wq" 
 
 
+Step-02:-
+
+vim file_name.txt 
+move the cursor to the specific line and press 
+"y" "number" and "DOwn/up arrow key"
+
+Press "p" for paste (go to the specific line)
+
+y mean copy (CLI based).
+number - Number of line to be copied.
+Down or Up key download decide to download the line.
 
 
 
