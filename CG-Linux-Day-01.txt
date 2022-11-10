@@ -162,34 +162,129 @@ command  Option  Argument1 argument2
 cp -r dir1 dir2
 cp -rv dir1 dir4 
 
-cp - COmmand - Utility to perform some action 
--r - Option (Which modify the nature of command/utility).
-dir1 & dir2 - Arguments (dir1 is 1st argument and dir2 is 2nd argument).
-  Argument is a data which required to execute the command/utility.
+cp - 
+COmmand - Utility to perform some action 
+
+-r - 
+Option (Which modify the nature of command/utility).
+
+dir1 & dir2 - 
+Arguments (dir1 is 1st argument and dir2 is 2nd argument).
+Argument is a data which required to execute the command/utility.
   
+
+####################
+Manual pages:-
+Every command having manual pages.
+ 1 - basic comman 
+ 2
+ 3
+ 4
+ 5 - Configuration files
+ 6
+ 7
+ 8 - Adm command
+ 9
+ 
+ note: 
+  - all commands under /bin or /usr/bin - Manual page reference is "man 1 cp" or "man cp"
+  - all commands user /sbin or /usr/sbin - Manual page reference is "man 8 useradd" or "man useradd" 
+  - 
+
+################################################
+2nd Day session:-
+
+####Quick recap:-
+1. What is OS (Operating System)?
+   user -> Interface (GUI / CLI) -> Kernel -> Hardware 
+   
+   User - 
+    Used for login to system/server.
+	Users are 3 types (Admin User = root ; Normal User  = chandra ; System User = apache "When install any software").
+	
+	su - user_name 
+	
+	Eg:
+	#whoami 
+	root
+	# pwd
+	/root   (Home directory of root user).
+	#su - chandra 
+ 
+    $ whoami 
+	chandra
+	$ pwd
+	/home/chandra (Home directory of chandra user). 
+
+2) Some basic operations:-
+
+2.1- Creating file using - touch and editor - vim file_name 
   
+  vim file1 
+  Press "i key" - insert mode.
+  
+  Type your contents.
+  This is your 2nd line.
+  
+  Press "Esc key" Lock mode (It mean you will not be able to write anything on file).
+  Press ":wq"
+  
+  cat file1 
+  
+2.1 mkdir - To create folder (directory)
+    mkdir /tmp/DATA or cd /tmp then cd DATA
+
+   cd - Change Directory.
+   
+   cd directory_name 
+   cd /tmp
+   cd /tmp/movies/eng/action 
+   cd ../..
+   
+   cd ../  (1 step out) 
+   cd ../../..  (3 steps come out )
+   
+   cd - (privious directory)
+
+
+####
+Assigment-03  (Suppose you have logged in via john user).
+$ mkdir BE 
+$ cd BE  
+$ pwd
+/home/john/BE 
+
+$ mkdir CSE ECE IT ME 
+$ ls -l 
+
+$ cd CSE 
+$ mkdir 1st_year 2nd_year 3rd_year 4th_year 
+$ cd 1st_year
+$ pwd
+/home/john/BE/CSE/1st_year 
+$ touch file01.txt
+$ cd ../../../  
+or 
+cd .. ; cd .. ; cd ..
+
+$ pwd
+/home 
+
+
+IN your honme dir 
+
+  CSE --
+     1st_year 
+	 2nd_year 
+	 3rd_year 
+	 4tj_year  
+	 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Coping the file via absolute.
-
-$  
-
-
-
+   
 
 
 
