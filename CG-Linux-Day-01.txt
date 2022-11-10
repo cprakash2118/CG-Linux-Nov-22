@@ -416,19 +416,80 @@ number - Number of line to be copied.
 Down or Up key download decide to download the line.
 
 
+Go to the specific line of the file and then press "d" two time (It will delete the file).
+
+
 
 Ass
 #### Assigment-05:-
-vim file1.txt 
-
-for x in {1..10}
+for x in {1..50}
 do
 echo "This is $count line." >> file1.txt
+done
 
-:wq
+vim file1.txt 
 
 Then copy 3,4,5 lines to 11,12,13
 Delete 7th line 
+
+========================#################============================
+Operations with file.
+- Creating file (via touch and vim editor)
+Note: To know more about vim (vimtutor)
+
+- cat (To view the contnet of the file).
+
+- over vim (copy/cut/paste)
+- mkdir/cd/ls/pwd/cp/mv/absolute & relative path.
+
+- head/tail/wc and pipe (|).
+
+- Users & groups (RedHat/CentOS/Fedora/Oracle Linux)
+
+ - useradd 
+  # useradd john 
+  # echo password123 | passwd --stdin john or passwd john (two time need to type the same password).
+  
+  /etc/passwd 
+  /etc/group
+  /etc/shadow 
+  /home/user_name 
+  /var/spool/mail/user_name 
+  
+  
+  
+ - userdel 
+  # userdel -r john (recursively remove home dir and mail file).
+  /home/user_name 
+  /var/spool/mail/user_name 
+  
+
+ - usermod 
+   
+  
+ - groupadd 
+ - groupdel 
+ - groupmod
+ 
+ Two types of groups 
+  - Primary 
+  - 2ndary 
+ 
+
+####################################
+Ubuntu 20.04 
+
+1) sudo adduser user1
+2) su - user1
+
+3) deluser user_name or sudo deluser user1 --remove-home 
+
+password 
+
+
+user1 to user5
+
+
 
 
 
