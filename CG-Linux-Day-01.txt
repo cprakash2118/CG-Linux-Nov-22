@@ -274,10 +274,10 @@ $ pwd
 IN your honme dir 
 
   CSE --
-     1st_year 
+     1st_year  -> file1
 	 2nd_year 
 	 3rd_year 
-	 4tj_year  
+	 4tj_year  -> file3.txt 
 	 
 
 
