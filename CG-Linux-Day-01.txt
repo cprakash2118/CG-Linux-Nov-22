@@ -313,6 +313,13 @@ copy file2 to IT/3rd_year    (Use relative path
 copy file3 to CSE/3rd_year   (Use absolute path)
 copy file4 to ECE/3rd_year    (Use relative path)
 
+######
+Solution
+$pwd
+BE3/CSE/1st_year
+$ cp -rv ../../BE3/CSE/1s_year/file1  ../../ECE/3rd_year/              (Relative path)
+$ cp /home/john/BE3/CSE/1s_year/file1  /home/john/BE3/ECE/3rd_year/    (Absolute path).
+
 
 NOte: copy - "cp" command 
 
