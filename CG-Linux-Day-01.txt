@@ -280,7 +280,22 @@ IN your honme dir
 	 4tj_year  -> file3.txt 
 	 
 
+mkdir -p BE2/{CSE,IT,ME,ECE/{1st_year,2nd_year,3rd_year,4th_year}.
 
+touch BR2/CSE/1s_year/file1
+touch BR2/IT/1s_year/file2
+
+NOw copy file2 to ME/4th_year 
+copy file1 to ECE/3rd_year
+
+Write the content using vim 
+
+This is my 1st line 
+This is  mmy 2nd line 
+
+:wq
+
+ 
 
 
 
