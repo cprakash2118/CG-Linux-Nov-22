@@ -411,13 +411,24 @@ move the cursor to the specific line and press
 Press "p" for paste (go to the specific line)
 
 y mean copy (CLI based).
+
 number - Number of line to be copied.
 Down or Up key download decide to download the line.
 
 
 
+Ass
+#### Assigment-05:-
+vim file1.txt 
 
+for x in {1..10}
+do
+echo "This is $count line." >> file1.txt
 
+:wq
+
+Then copy 3,4,5 lines to 11,12,13
+Delete 7th line 
 
 
 
