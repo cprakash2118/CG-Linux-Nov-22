@@ -306,10 +306,10 @@ touch BE2/IT/1s_year/file2
 touch BE2/ME/1s_year/file3
 touch BE2/ECE/1s_year/file4
 
-copy  file1 to ECE/3rd_year
-copy file2 to IT/3rd_year
-copy file3 to CSE/3rd_year
-copy file4 to ECE/3rd_year
+copy  file1 to ECE/3rd_year  (Use absolute path)
+copy file2 to IT/3rd_year    (Use relative path
+copy file3 to CSE/3rd_year   (Use absolute path)
+copy file4 to ECE/3rd_year    (Use relative path)
 
 
 NOte: copy - "cp" command 
@@ -324,6 +324,43 @@ MOve file to some other location.
 mv file_date to IT/2nd_year 
 
 ################################################################
+
+
+"/" - root directory (all sub-directory inside "/" only).
+
+/bin 
+/usr/bin 
+
+/sbin
+/usr/sbin/useradd 
+
+### Example.
+$ which pwd
+/bin/pwd 
+or 
+/usr/bin/pwd  
+###
+
+/home - Default fome directoty 
+/etc - all configution related data.
+
+===================
+Absolute path:-
+Absolute path always start "with /" 
+
+Relative path:- 
+Relative path not start with "/" 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
