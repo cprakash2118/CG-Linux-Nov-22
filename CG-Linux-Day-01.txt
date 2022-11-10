@@ -280,10 +280,10 @@ IN your honme dir
 	 4tj_year  -> file3.txt 
 	 
 
-mkdir -p BE2/{CSE,IT,ME,ECE}/{1st_year,2nd_year,3rd_year,4th_year}.
+mkdir -p BE2/{CSE,IT,ME,ECE}/{1st_year,2nd_year,3rd_year,4th_year}
 
-touch BR2/CSE/1s_year/file1
-touch BR2/IT/1s_year/file2
+touch BE2/CSE/1s_year/file1
+touch BE2/IT/1s_year/file2
 
 NOw copy file2 to ME/4th_year 
 copy file1 to ECE/3rd_year
@@ -296,6 +296,59 @@ This is my 1st line
 This is  mmy 2nd line 
 
 :wq
+
+=============================
+cut using "mv" 
+
+mkdir -p BE2/{CSE,IT,ME,ECE}/{1st_year,2nd_year,3rd_year,4th_year}
+touch BE2/CSE/1s_year/file1
+touch BE2/IT/1s_year/file2
+touch BE2/ME/1s_year/file3
+touch BE2/ECE/1s_year/file4
+
+copy  file1 to ECE/3rd_year
+copy file2 to IT/3rd_year
+copy file3 to CSE/3rd_year
+copy file4 to ECE/3rd_year
+
+
+NOte: copy - "cp" command 
+
+Use vim and create "file_data" with some contents (File location - /home/user/file_data)
+This is 1st line.
+This is 2nd line.
+:wq 
+
+
+MOve file to some other location.
+mv file_date to IT/2nd_year 
+
+################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
