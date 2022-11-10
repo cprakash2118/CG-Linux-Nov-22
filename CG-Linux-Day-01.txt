@@ -298,13 +298,15 @@ This is  mmy 2nd line
 :wq
 
 =============================
+##### Assigment-04
+
 cut using "mv" 
 
-mkdir -p BE2/{CSE,IT,ME,ECE}/{1st_year,2nd_year,3rd_year,4th_year}
-touch BE2/CSE/1s_year/file1
-touch BE2/IT/1s_year/file2
-touch BE2/ME/1s_year/file3
-touch BE2/ECE/1s_year/file4
+mkdir -p BE3/{CSE,IT,ME,ECE}/{1st_year,2nd_year,3rd_year,4th_year}
+touch BE3/CSE/1s_year/file1
+touch BE3/IT/1s_year/file2
+touch BE3/ME/1s_year/file3
+touch BE3/ECE/1s_year/file4
 
 copy  file1 to ECE/3rd_year  (Use absolute path)
 copy file2 to IT/3rd_year    (Use relative path
