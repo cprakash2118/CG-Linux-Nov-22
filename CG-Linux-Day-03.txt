@@ -116,7 +116,13 @@ ps -aef | head -1 ; ps -aef | grep "process_name"
 ps -eo pcpu,pid,ppid,user,nice,stat,comm | head -1 ; ps -eo pcpu,pid,ppid,user,nice,stat,comm | grep example 
 
 Top 10 CPU consuming process.
-ps -eo pcpu,pid,ppid,user,nice,stat,comm | head -1; ps -eo pcpu,pid,ppid,user,nice,stat,comm |head -12
+ps -eo pcpu,pid,ppid,user,nice,stat,comm | head -1; ps -eo pcpu,pid,ppid,user,nice,stat,comm |head -10
+
+
+
+Top 10 memory consuming process.
+ps -eo pmem,pid,ppid,user,nice,stat,comm | head -1; ps -eo pmem,pid,ppid,user,nice,stat,comm |head -10
+
 
 Refer (man ps)
 
