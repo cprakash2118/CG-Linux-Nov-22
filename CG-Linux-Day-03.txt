@@ -1,0 +1,70 @@
+### Day-03
+#Quick recap:-
+1. Linux Operating System (What is OS and it's purpose).
+   Example:- USER -> INTERFACE (GUI-"Graphical User INterface" and CLI-"Command Line Interface") -> Kernel -> Hardware.
+   - What is user ? 
+     It's account used for login to OS (Linux OS), types of users (Admin user = "root"; Normal User = "john" & "joe" ; System user - "apache" Default user created when you install apache package "httpd").
+     
+     1) User addition/Creation  
+	    - useradd username or adduser username (refer manual pages or command --help)
+        - Try to use more options for more customization.
+        - User creation via root or "sudo account".
+        - In case of ubuntu, use sudo (sudo useradd john) - It's promt for your password once password correct it will perform tasks as same as root account.
+		
+ 		
+	 2) User modification
+	    - sudo usermod -aG group_name username 
+		  Example:- sudo usermof -aG devops john 
+		  
+		- To verify this, su - john 
+		  
+	 3) User deletion 
+	    - sudo deluser john 
+		or 
+		- sudo deluser --remove-home john 
+		
+	Note: How to make sudo user.
+	$ sudo su -
+	
+	# apt install sudo 
+	# visudo      (This will open one file - /etc/sudoers)
+     user_name   ALL=(ALL:ALL) ALL	
+	 %group_name ALL=(ALL:ALL) ALL
+	 
+	 
+	 Note: Whenever you create users it's entry getting updated to below files.
+	    
+		/etc/passwd   (To know more about this, please refer manual pages - "man 5 passwd"
+		
+		user_name:Encrypted_password:UID:GID:GCOS:home directory:shell 
+		john:x:1011:1011:"Test User":/home/john/bin/bash
+		
+		/etc/group  (To know more about this, please refer manual pages - "man 5 group"
+		
+		groupName:x:GID:users_list_seperated_by_comoas
+		devops:x:5456778:user1,user2,user3 
+		
+		/etc/shadow
+		- /etc/group  (To know more about this, please refer manual pages - "man 5 shadow"
+		
+	 
+	 
+	 4) Group Addition/Creation
+	 - groupadd group_nam
+	  $ sudo groupadd devops_grp
+	  
+	 5) Group modification
+	  $ sudo groupmod (refer groupmod --help or man groupmod or man 8 groupmod).
+	  
+	 6) Group deletion
+	  $ sudo groupdel groupname 
+	  
+	  
+#############
+Assigment#day-03-Assignment-01 
+Create users - user1-6
+Create group - devops, sre , cloud_eng
+Add users to respective groups - user1-2 -> "devops"; user3-4 add to "sre" group; user5-6 add to "cloud_eng"  
+
+give sudo access to sre groups and user5 
+
