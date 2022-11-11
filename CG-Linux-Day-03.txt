@@ -163,8 +163,60 @@ tar -jxf etc.tar.bz2 -C /absolute-location
 
 Assigment#day-03-Assignment-02
 
+$ sudo su - 
+
 - Compress (tar,gz,bz2) /etc/ and /boot directories to /WORK-TAR location 
 - Extract the compressed file to mentioned location (/WORK-TAR/backup/2022 location
+
+
+#####################
+find & locate 
+
+locate <file_name> 
+example:
+ locate passwd 
+
+Note: In-case if you are unable to get the output then run "updatedb" and rerun that locate command.
+
+find /etc -name passwd 
+find / -size +400M 
+find / -size -10M 
+find / -size 502M 
+
+man find (for your reference).
+
+du -sh file_name (GIve you the size of the file).
+
+find / -perm 4755
+find / -user user1 -group wheel 
+
+
+man find (for more info).
+
+#############################===================##########################
+
+Copy remotely/over the network 
+
+servera 
+/my-data/file123
+
+and serverb 
+/data-location/project2 
+
+
+
+scp -r file_name user_name@server_name:/location
+
+example:-
+scp -r /my-data/file123 root@serverb:/myfile
+rsync -avz  /my-data/file123 root@serverb:/myfile
+
+
+
+
+
+
+
 
 
 
