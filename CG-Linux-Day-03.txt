@@ -127,6 +127,52 @@ ps -eo pmem,pid,ppid,user,nice,stat,comm | head -1; ps -eo pmem,pid,ppid,user,ni
 Refer (man ps)
 
 
+==== Load average 
+uptime (with respect to CPU utilization).
+uptime 
+free -m -t 
+top 
+lscpu 
+=============================#####################============================
+Archive :- 
+tar 
+ gunzip 
+ bunzip2
+
+TAR:-
+tar - compression 
+tar -cf etc.tar /etc  (it will create etc.tar file, it's compressed file).
+tar -xf etc.tar       (it will extract tar file in current location). 
+
+tar -xf etc.tar -C /absolute-location
+mkdir -p /data/etc/tar
+tar -xf etc.tar -C /data/etc/tar
+
+
+GUNZIP:-
+tar -zcf etc.tar.gz  /etc  (it will create etc.tar.gz file, it's compressed file).
+tar -zxf etc.tar.gz 
+tar -zxf etc.tar.gz -C /absolute-location
+
+
+BUNZIP2:-
+tar -jcf etc.tar.bz2  /etc  (it will create etc.tar.gz file, it's compressed file).
+tar -jxf etc.tar.bz2  
+tar -jxf etc.tar.bz2 -C /absolute-location
+ 
+
+Assigment#day-03-Assignment-02
+
+- Compress (tar,gz,bz2) /etc/ and /boot directories to /WORK-TAR location 
+- Extract the compressed file to mentioned location (/WORK-TAR/backup/2022 location
+
+
+
+
+
+
+
+
 
 
 
