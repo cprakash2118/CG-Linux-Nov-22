@@ -212,6 +212,38 @@ scp -r /my-data/file123 root@serverb:/myfile
 rsync -avz  /my-data/file123 root@serverb:/myfile
 
 
+#########################
+Shell Sccript:-
+###
+Step 1) Creating file/script 
+
+vim hello.sh 
+#!/bin/bash
+echo "Hello world"
+printf "Hello world, from printf \n"
+
+:wq
+
+
+Step 2) Provide execution permission.
+chmod 755 hello.sh 
+
+Step 3) Execute the script.
+$ ./hello.sh 
+
+###
+
+2.
+vim server_info.sh
+#!/bin/bash 
+echo -e "Server Name \t\t-\t $(uname -n)" 
+echo -e "Server IP Addr \t\t-\t $(hostname -I awk -F" " '{print $1}')"
+echo -e "Server Operating System \t\t$(cat /etc/redhat-release)
+echo -e "Current user        \t\t-:\t$(whoami)" 
+
+
+:wq
+
 
 
 
