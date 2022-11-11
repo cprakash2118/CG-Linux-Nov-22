@@ -60,6 +60,7 @@
 	  $ sudo groupdel groupname 
 	  
 	  
+	  
 #############
 Assigment#day-03-Assignment-01 
 Create users - user1-6
@@ -67,4 +68,70 @@ Create group - devops, sre , cloud_eng
 Add users to respective groups - user1-2 -> "devops"; user3-4 add to "sre" group; user5-6 add to "cloud_eng"  
 
 give sudo access to sre groups and user5 
+
+User addition/Creation:-
+  $ sudo useradd -b /home/user1 -s /bin/bash user1 
+  $ sudo useradd -b /home/user2 -s /bin/bash user2
+  $ sudo useradd -b /home/user3 -s /bin/bash user3
+  $ sudo useradd -b /home/user4 -s /bin/bash user4
+  $ sudo useradd -b /home/user5 -s /bin/bash user5
+  $ sudo useradd -b /home/user6 -s /bin/bash user6  
+  
+  Group Creation :-
+  $ sudo groupadd devops_grp 
+  $ sudo groupadd sre_grp
+  $ sudo groupadd cloud_eng_grp
+  
+  
+  Group Assigmnent user.
+  $ sudo usermod -aG devops_grp user1
+  $ sudo usermod -aG devops_grp user2 
+  $ sudo usermod -aG src_grp user3 
+  $ sudo usermod -aG src_grp user4
+  $ sudo usermod -aG cloud_eng_grp user5
+  $ sudo usermod -aG cloud_eng_grp user6 
+  
+ $ sudo su - 
+ # mkdir /project
+ # cd /project
+ # mkdir DEVOPS SRE CLOUD_ENG
+ # chown 
+ 
+ touch file1.txt 
+ ls -l file1.txt 
+ 
+################### UNix/LInux permission model #################
+
+chmod (example - chmod 744 file/dir)
+chown (Example - chown root:devops  file/dir)
+umask (umask 323 ; umark 
+
+Process Management:-
+Program under execution call process.
+Process associated with PID, PPID, UID, or GID 
+
+HOw to list process?
+ps -aef | head -1 ; ps -aef | grep "process_name"
+
+ps -eo pcpu,pid,ppid,user,nice,stat,comm | head -1 ; ps -eo pcpu,pid,ppid,user,nice,stat,comm | grep example 
+
+Top 10 CPU consuming process.
+ps -eo pcpu,pid,ppid,user,nice,stat,comm | head -1; ps -eo pcpu,pid,ppid,user,nice,stat,comm |head -12
+
+Refer (man ps)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
 
